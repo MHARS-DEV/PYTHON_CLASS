@@ -6,7 +6,7 @@ class vehiculo :
 
 carrito = vehiculo("NEGRO","LAMBORGUINI")
 
-print(f'El carro es color {carrito.color} y la marca es {carrito.marca}' )
+#print(f'El carro es color {carrito.color} y la marca es {carrito.marca}' )
 
 f=open('guardaCaracteristicas.txt',"w")
 texto=f'Color : {carrito.color} y la marca es :{carrito.marca}'
@@ -14,7 +14,7 @@ f.write(texto)
 f.close()
 
 f=open('guardaCaracteristicas.txt',"r+")
-f.readlines()
+print(f.read())
 f.close()
 
 
